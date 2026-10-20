@@ -1,0 +1,42 @@
+===== perp-starter
+> perp-starter@0.1.0 start
+> tsx src/index.ts
+perp-starter on ETH-PERP (ETH/USDso:USDso) | long 50 USDso at 2x | take-profit 2% stop-loss 1% | dry-run true
+MarginBank is empty for 0xAF3E4FE0eB3dB2a6dEC0649C0Ce98518fF01560e. Deposit collateral before trading: every perp order locks from the bank, not from your wallet, so an unfunded account fails every order. Approve the MarginBank (0x478769e1177c0773c43a593dccc4ad15f15f1394) as spender on the collateral token, then deposit.
+npm error Lifecycle script `start` failed with error:
+npm error code 1
+npm error path /workspace/dreamdex-perps/dreamdex-bot-kit/strategies/perp-starter
+npm error workspace perp-starter@0.1.0
+npm error location /workspace/dreamdex-perps/dreamdex-bot-kit/strategies/perp-starter
+npm error command failed
+npm error command sh -c tsx src/index.ts
+===== perp-maker
+> perp-maker@0.1.0 start
+> tsx src/index.ts
+perp-maker on ETH-PERP | 25 USDso per side at 2x | half-spread 15bps skew 10bps | cap 100 USDso | dry-run true
+MarginBank is empty for 0xAF3E4FE0eB3dB2a6dEC0649C0Ce98518fF01560e. Deposit collateral before trading: every perp order locks from the bank, not from your wallet, so an unfunded account fails every order. Approve the MarginBank (0x478769e1177c0773c43a593dccc4ad15f15f1394) as spender on the collateral token, then deposit.
+npm error Lifecycle script `start` failed with error:
+npm error code 1
+npm error path /workspace/dreamdex-perps/dreamdex-bot-kit/strategies/perp-maker
+npm error workspace perp-maker@0.1.0
+npm error location /workspace/dreamdex-perps/dreamdex-bot-kit/strategies/perp-maker
+npm error command failed
+npm error command sh -c tsx src/index.ts
+===== perp-funding
+> perp-funding@0.1.0 start
+> tsx src/index.ts
+perp-funding on ETH-PERP | enter above 10.00% APR, exit below 3.00% | 50 USDso per entry at 2x, cap 200 | dry-run true
+MarginBank is empty for 0xAF3E4FE0eB3dB2a6dEC0649C0Ce98518fF01560e. Deposit collateral before trading: every perp order locks from the bank, not from your wallet, so an unfunded account fails every order. Approve the MarginBank (0x478769e1177c0773c43a593dccc4ad15f15f1394) as spender on the collateral token, then deposit.
+npm error Lifecycle script `start` failed with error:
+npm error code 1
+npm error path /workspace/dreamdex-perps/dreamdex-bot-kit/strategies/perp-funding
+npm error workspace perp-funding@0.1.0
+npm error location /workspace/dreamdex-perps/dreamdex-bot-kit/strategies/perp-funding
+npm error command failed
+npm error command sh -c tsx src/index.ts
+===== perp-guard
+> perp-guard@0.1.0 start
+> tsx src/index.ts
+perp-guard | reduce 25% below 1.5x maintenance, flatten below 1.15x | dry-run true
+stopping, finishing the current cycle first. Press Ctrl-C again to exit now.
+guard stopped

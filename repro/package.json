@@ -1,0 +1,6 @@
+{
+  "name": "dreamdex-perps-feedback-repro",
+  "private": true,
+  "type": "module",
+  "dependencies": { "@somnia-chain/markets-sdk": "0.32.1", "viem": "^2.57.7", "tsx": "^4.19.0" }
+}

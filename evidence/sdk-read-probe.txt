@@ -1,0 +1,108 @@
+◇ injected env (3) from ../.env
+OK  listPerpMarkets 560ms [{"id":"0x2a1822b02039ddf0e293f3f7243673fc03eaf16c","poolAddress":"0x2a1822b02039ddf0e293f3f7243673fc03eaf16c","lastPrice":"1895700000000000000","lastTradeAt":"1792488149","cumulativeBaseVolume":"430153300000000000000000","cumulativeQuoteVolume":"815936837570000000000000","tradeCount":"649","baseDec
+BTC row keys: id,poolAddress,lastPrice,lastTradeAt,cumulativeBaseVolume,cumulativeQuoteVolume,tradeCount,baseDecimals,quoteDecimals,createdAtTimestamp,createdAtBlock,marketType,baseToken,quoteToken,baseSymbol,quoteSymbol,baseIsNative,tickSize,lotSize,minQuantity,marginBank,initialMarginBps,stopRegistry,markPrice,markPriceUpdatedAt,fundingRate,cumulativeFundingPerUnit,indexPrice,fundingUpdatedAt,fundingWindowSec,fundingIntervalSec,openInterest,openInterestUpdatedAt,chainId
+OK  listPerpMarkets{baseSymbol:WBTC} 134ms []
+OK  listPerpMarkets{baseSymbol:BTC} 133ms [{"id":"0x4181dd08e73bbcdd1ba3e615a18f6abd941b94c0","poolAddress":"0x4181dd08e73bbcdd1ba3e615a18f6abd941b94c0","lastPrice":"81523200000000000000000","lastTradeAt":"1792488488","cumulativeBaseVolume":"457531266000","cumulativeQuoteVolume":"375490942493711000000000000","tradeCount":"366369","baseDecim
+OK  getPerpMarket(btc.id) 133ms {"id":"0x4181dd08e73bbcdd1ba3e615a18f6abd941b94c0","poolAddress":"0x4181dd08e73bbcdd1ba3e615a18f6abd941b94c0","lastPrice":"81523200000000000000000","lastTradeAt":"1792488488","cumulativeBaseVolume":"457531266000","cumulativeQuoteVolume":"375490942493711000000000000","tradeCount":"366369","baseDecima
+OK  getPerpSystemConfig 940ms {"marginBank":"0x478769E1177C0773c43A593DCCc4Ad15F15F1394","collateralToken":"0xed7993A74dAe1e6656B704A424DcD8711aAf4F72","perpPoolFactory":"0xE631fAEE547baeE07353E290f0562ea67d856560","liquidationEngine":"0xA66d3C24Ad4a389d863846905D8173e1017e9F4D","insuranceFund":"0x50826894D47C6D4f3BeA38BFDC7Dc5c
+OK  getInsuranceFundState 252ms {"address":"0x50826894D47C6D4f3BeA38BFDC7Dc5c5be171b80","maxTiers":"5n","totalBalance":"525000000000000000000000n","tiers":[{"tier":0,"balance":"0n","poolCount":"0n"},{"tier":1,"balance":"340000000000000000000000n","poolCount":"3n"},{"tier":2,"balance":"120000000000000000000000n","poolCount":"10n"},
+OK  getLiquidationEngineConfig 124ms {"address":"0xA66d3C24Ad4a389d863846905D8173e1017e9F4D","marginBank":"0x478769E1177C0773c43A593DCCc4Ad15F15F1394","penaltyBps":"100n","minSpreadBps":"50n","maxSpreadBps":"500n","maxVolumePerBlock":"100000000000000000000000n","bidderCount":"1n"}
+OK  listPerpPoolStatuses 282ms [{"pool":"0x4181dd08E73BbCdd1Ba3E615A18f6abD941b94C0","baseToken":"0xa77fA353dAC50DE5c15676AC910C221A4d2Bd6b5","restricted":false,"marginBank":"0x478769E1177C0773c43A593DCCc4Ad15F15F1394","registered":true,"tradeable":true},{"pool":"0xD6Cb1DD58580B84D76068aC21594219ce03aeddf","baseToken":"0x1516Cceb
+OK  listTradeablePerpPools 276ms ["0x4181dd08E73BbCdd1Ba3E615A18f6abD941b94C0","0xD6Cb1DD58580B84D76068aC21594219ce03aeddf","0xB483ec1fb34996638677c20ab087b16F1896FA53","0x63B47eD4A7DE0FdE659b0d82441dD74828b7297A","0x7058579F3248559963f79AdB937c6De9f953E060","0xC410012e39765Cd5f772e84BAcB19554AEC040Df","0x3D2A99fE1e2BdEaA25024515A2
+OK  getPerpState BTC 253ms {"markPrice":"81325677303955449000000n","markPriceOk":true,"indexPrice":"81360768013890001000000n","indexUpdatedAt":"1792488496n","fundingRate":"1670497723864424n","cumulativeFundingPerUnit":"2006007401035792091568361423611031687500n","projectedCumulativeFundingPerUnit":"2006007401035792091568361423
+OK  getPerpFeedStatus BTC 251ms {"markPriceOk":true,"markPrice":"81325677303955449000000n","openInterest":"28571356000n","indexUpdatedAt":"1792488496n"}
+OK  getPerpRiskParams BTC 123ms {"initialMarginBps":"500n","maintenanceMarginBps":"250n","closeOutMarginBps":"125n","maxOpenInterest":"49363090000n","maxPositionSize":"10000000000n","takerFeeBpsTimes1k":"0n","makerFeeBpsTimes1k":"0n","insuranceFundShareBps":"0n"}
+OK  getEffectiveImfBps BTC 137ms "500n"
+OK  getPerpHealthSnapshot BTC 124ms {"priceable":true,"oneBase":"100000000n","markPrice":"81331823339085817500000n","projectedCumulativeFunding":"2006007401035792091568361423611031687500n","effectiveImfBps":"500n","maintenanceMarginBps":"250n","closeOutMarginBps":"125n"}
+OK  getPerpFundingPremium BTC 397ms {"timeWeightedPremium":"1993776438205966n","lastObservedPremium":"1870159207592923n","accumulator":"1975832450262112885000000000n","intervalStartNs":"1792487506000000000n","observedAtNs":"1792488497000000000n","validUntilNs":"1792488522000000000n","armed":true}
+OK  getSpotOrderBook BTC 128ms {"bids":[{"price":"81513400000000000000000n","quantity":"1229000n"},{"price":"81512800000000000000000n","quantity":"3073000n"},{"price":"81512600000000000000000n","quantity":"2459000n"},{"price":"81512400000000000000000n","quantity":"3689000n"},{"price":"81511800000000000000000n","quantity":"5534000
+OK  getBookTops BTC 159ms {"0x4181dd08e73bbcdd1ba3e615a18f6abd941b94c0":{"bestBid":"81513400000000000000000","bestAsk":"83300000000000000000000","mid":"82406700000000000000000"}}
+OK  getCandles 3600 BTC 262ms [{"bucketStart":"1792479600","openPrice":"81886900000000000000000","high":"81922700000000000000000","low":"81537100000000000000000","closePrice":"81621600000000000000000","baseVolume":"6063283000","quoteVolume":"4955187389341000000000000","tradeCount":1273,"lastFillId":"28313233_11"},{"bucketStart":
+OK  listFundingRateHistory BTC 132ms [{"id":"0x4181dd08e73bbcdd1ba3e615a18f6abd941b94c0_28356274_13","pool":"0x4181dd08e73bbcdd1ba3e615a18f6abd941b94c0","fundingRate":"1670497723864424","cumulativeFundingPerUnit":"2006007401035792091568361423611031687500","indexPrice":"81335583505315804000000","markPrice":"81296700664951599500000","int
+OK  listFundingRateCandles BTC 132ms [{"id":"0x4181dd08e73bbcdd1ba3e615a18f6abd941b94c0_3600_1792486800","pool":"0x4181dd08e73bbcdd1ba3e615a18f6abd941b94c0","intervalSeconds":3600,"bucketStart":"1792486800","avgFundingRate8h":"326211083299080","minFundingRate8h":"1670497723864424","maxFundingRate8h":"1670497723864424","coverage":"19527
+OK  getOpenInterestHistory BTC 131ms [{"id":"0x4181dd08e73bbcdd1ba3e615a18f6abd941b94c0_28366174_14","pool":"0x4181dd08e73bbcdd1ba3e615a18f6abd941b94c0","openInterest":"28571356000","timestamp":"1792488497","blockNumber":"28366174"},{"id":"0x4181dd08e73bbcdd1ba3e615a18f6abd941b94c0_28366158_37","pool":"0x4181dd08e73bbcdd1ba3e615a18f6ab
+OK  getFills BTC 132ms [{"blockNumber":"28366174","logIndex":15,"id":"28366174_15","market":"0x4181dd08e73bbcdd1ba3e615a18f6abd941b94c0","pool":"0x4181dd08e73bbcdd1ba3e615a18f6abd941b94c0","fillPrice":"81519400000000000000000","quantity":"1220000","quoteQuantity":"994536680000000000000","maker":"0x47537e3a3ea6e9391f3b26ea
+OK  listPerpStopOrders pool BTC 264ms [{"id":"0x52e2ccebaec9332672c247e9a90aa3d61fb615ef_6456360425798343070255","registry":"0x52e2ccebaec9332672c247e9a90aa3d61fb615ef","orderIdRaw":"6456360425798343070255","owner":"0xcb5607b11b016a722b732afdbdeaf257721e4994","isBid":true,"quantity":"18504000","triggerPrice":"81360000000000000000000","t
+OK  getPerpSideHolders long BTC 7282ms {"holders":["0xd167376D0431131b4C2EC25e3581c6AF734794F3","0xbc28A1b06eaF0513CD0B04D7345Ac605ec8b4bA3","0xb6E8369a7270C8C12c912Bb50fae0550D0fF5b64","0xF237c86cd454D7F7D6bFb2f826a986bE0aB577B3","0x5c693d3D7DaCFd71F6F70A0cB6010A773e004d68","0x27871F6eCBCc6eb3B5aE6C4cE6541dbA120aFFb9","0xdf271A2B6De82ca
+OK  getMaxPerpOrderSize fresh BTC 416ms {"priceable":true,"asOfBlock":"28366273n","maxQuantity":"0n","unalignedMaxQuantity":"0n","increasingQuantity":"0n","reducingQuantity":"0n","lockAmount":"0n","topUpRequired":"0n","wallet":null,"fundingPayer":null,"mainWalletCapacity":null,"ownWalletPull":"0n","mainWalletPull":"0n","mainFundingBlocked
+OK  previewPerpOrderMargin fresh BTC 275ms {"priceable":true,"asOfBlock":"28366273n","effectiveImfBps":"500n","markPrice":"81330323339085817500000n","unlockedCollateral":"0n","equity":"0n","imRequirement":"0n","wallet":null,"fundingPayer":null,"mainWalletCapacity":null,"increasingQuantity":"13000n","reducingQuantity":"0n","lockAmount":"65000
+OK  getPerpPosition fresh BTC 123ms {"size":"0n","avgEntryPrice":"0n","entryFundingIndex":"0n","lastUpdatedTimestampNs":"0n"}
+OK  getPerpLeverage fresh BTC 259ms {"asOfBlock":"28366281n","size":"0n","markPrice":"81328473339085817500000n","positionNotional":"0n","accountNotional":"0n","equity":"0n","positionLeverageBps":null,"accountLeverageBps":null,"marketMaxLeverageBps":"200000n","accountMaxLeverageX":0,"protocolMaxLeverageX":20,"creditFloor":"0n","voucher
+OK  getLiquidationPrice fresh BTC 127ms null
+OK  previewPerpClosePnl fresh BTC 129ms {"priceable":true,"asOfBlock":"28366281n","requestedQuantity":"0n","closedQuantity":"0n","remainingSize":"0n","fullClose":false,"realizedPnl":"0n","fundingSettled":"0n","fee":"0n","netProceeds":"0n","placeable":false,"fillPrice":"81328473339085817500000n","markPrice":"81328473339085817500000n","avgE
+OK  getPerpState ETH 130ms {"markPrice":"2381309896298572500000n","markPriceOk":true,"indexPrice":"2382635362409320000000n","indexUpdatedAt":"1792488507n","fundingRate":"100000000000000n","cumulativeFundingPerUnit":"18532090754272899007141379575151312500n","projectedCumulativeFundingPerUnit":"185320907542728990071413795751513
+OK  getPerpFeedStatus ETH 373ms {"markPriceOk":true,"markPrice":"2381412335076320000000n","openInterest":"939189400000000000000n","indexUpdatedAt":"1792488508n"}
+OK  getPerpRiskParams ETH 123ms {"initialMarginBps":"500n","maintenanceMarginBps":"250n","closeOutMarginBps":"125n","maxOpenInterest":"7991225000000000000000n","maxPositionSize":"399561200000000000000n","takerFeeBpsTimes1k":"0n","makerFeeBpsTimes1k":"0n","insuranceFundShareBps":"0n"}
+OK  getEffectiveImfBps ETH 123ms "500n"
+OK  getPerpHealthSnapshot ETH 123ms {"priceable":true,"oneBase":"1000000000000000000n","markPrice":"2381404843822356000000n","projectedCumulativeFunding":"18532090754272899007141379575151312500n","effectiveImfBps":"500n","maintenanceMarginBps":"250n","closeOutMarginBps":"125n"}
+OK  getPerpFundingPremium ETH 522ms {"timeWeightedPremium":"208942945172366n","lastObservedPremium":"191021529952062n","accumulator":"114536576784897609000000000n","intervalStartNs":"1792487959000000000n","observedAtNs":"1792488507000000000n","validUntilNs":"1792488533000000000n","armed":true}
+OK  getSpotOrderBook ETH 597ms {"bids":[{"price":"2383190000000000000000n","quantity":"839700000000000000n"},{"price":"2383080000000000000000n","quantity":"399100000000000000n"},{"price":"2382910000000000000000n","quantity":"8397900000000000000n"},{"price":"2382890000000000000000n","quantity":"2939400000000000000n"},{"price":"238
+OK  getBookTops ETH 517ms {"0xd6cb1dd58580b84d76068ac21594219ce03aeddf":{"bestBid":"2383190000000000000000","bestAsk":"2383300000000000000000","mid":"2383245000000000000000"}}
+OK  getCandles 3600 ETH 582ms [{"bucketStart":"1792479600","openPrice":"2394920000000000000000","high":"2395920000000000000000","low":"2384970000000000000000","closePrice":"2387840000000000000000","baseVolume":"964358600000000000000","quoteVolume":"2305297698224000000000000","tradeCount":723,"lastFillId":"28313190_98"},{"bucketS
+OK  listFundingRateHistory ETH 126ms [{"id":"0xd6cb1dd58580b84d76068ac21594219ce03aeddf_28360800_72","pool":"0xd6cb1dd58580b84d76068ac21594219ce03aeddf","fundingRate":"100000000000000","cumulativeFundingPerUnit":"18532090754272899007141379575151312500","indexPrice":"2382316717833855000000","markPrice":"2381183077669903500000","interval
+OK  listFundingRateCandles ETH 130ms [{"id":"0xd6cb1dd58580b84d76068ac21594219ce03aeddf_3600_1792486800","pool":"0xd6cb1dd58580b84d76068ac21594219ce03aeddf","intervalSeconds":3600,"bucketStart":"1792486800","avgFundingRate8h":"32166666666666","minFundingRate8h":"100000000000000","maxFundingRate8h":"100000000000000","coverage":"32166666
+OK  getOpenInterestHistory ETH 129ms [{"id":"0xd6cb1dd58580b84d76068ac21594219ce03aeddf_28366242_54","pool":"0xd6cb1dd58580b84d76068ac21594219ce03aeddf","openInterest":"939189400000000000000","timestamp":"1792488503","blockNumber":"28366242"},{"id":"0xd6cb1dd58580b84d76068ac21594219ce03aeddf_28366242_48","pool":"0xd6cb1dd58580b84d76068
+OK  getFills ETH 127ms [{"blockNumber":"28366242","logIndex":55,"id":"28366242_55","market":"0xd6cb1dd58580b84d76068ac21594219ce03aeddf","pool":"0xd6cb1dd58580b84d76068ac21594219ce03aeddf","fillPrice":"2383600000000000000000","quantity":"2733200000000000000","quoteQuantity":"6514855520000000000000","maker":"0x47537e3a3ea6
+OK  listPerpStopOrders pool ETH 315ms [{"id":"0x44bfa5b28684e8d2156d15b85902da18f02b3a34_2176715800697727095945","registry":"0x44bfa5b28684e8d2156d15b85902da18f02b3a34","orderIdRaw":"2176715800697727095945","owner":"0x8ca7e26d9c01646bce0b68bb4e8b1acc987e8200","isBid":false,"quantity":"420100000000000000","triggerPrice":"2385000000000000
+OK  getPerpSideHolders long ETH 900ms {"holders":["0xdf271A2B6De82cabED87cA117C29058fcE4Af0CC","0x597A0F6f87Ae374553D8ce3aD580487e1bB9ed8d","0x1E3eDE6E34143efb8FbC16f1659e1a0b790FDB45","0xc1FF2bcC7115b5B2F70dd6d7a728C7a898e2b921","0xB44b0c0310759F584EBABa1130E38b74C18c418b","0xb5c645DD510762C961Aa86f6c6d13A2E89ee88a3","0x72FcAe8Cf145820
+OK  getMaxPerpOrderSize fresh ETH 2171ms {"priceable":true,"asOfBlock":"28366334n","maxQuantity":"0n","unalignedMaxQuantity":"0n","increasingQuantity":"0n","reducingQuantity":"0n","lockAmount":"0n","topUpRequired":"0n","wallet":null,"fundingPayer":null,"mainWalletCapacity":null,"ownWalletPull":"0n","mainWalletPull":"0n","mainFundingBlocked
+OK  previewPerpOrderMargin fresh ETH 382ms {"priceable":true,"asOfBlock":"28366356n","effectiveImfBps":"500n","markPrice":"2381247527489111000000n","unlockedCollateral":"0n","equity":"0n","imRequirement":"0n","wallet":null,"fundingPayer":null,"mainWalletCapacity":null,"increasingQuantity":"4000000000000000n","reducingQuantity":"0n","lockAmou
+OK  getPerpPosition fresh ETH 124ms {"size":"0n","avgEntryPrice":"0n","entryFundingIndex":"0n","lastUpdatedTimestampNs":"0n"}
+OK  getPerpLeverage fresh ETH 131ms {"asOfBlock":"28366356n","size":"0n","markPrice":"2381247527489111000000n","positionNotional":"0n","accountNotional":"0n","equity":"0n","positionLeverageBps":null,"accountLeverageBps":null,"marketMaxLeverageBps":"200000n","accountMaxLeverageX":0,"protocolMaxLeverageX":20,"creditFloor":"0n","voucherL
+OK  getLiquidationPrice fresh ETH 705ms null
+OK  previewPerpClosePnl fresh ETH 1257ms {"priceable":true,"asOfBlock":"28366370n","requestedQuantity":"0n","closedQuantity":"0n","remainingSize":"0n","fullClose":false,"realizedPnl":"0n","fundingSettled":"0n","fee":"0n","netProceeds":"0n","placeable":false,"fillPrice":"2381052527489111000000n","markPrice":"2381052527489111000000n","avgEnt
+OK  getPerpVoucherCampaign 247ms {"distributor":"0x2ACD9EFdA721450906bfE1bef3edE269636E42C4","collateralToken":"0xed7993A74dAe1e6656B704A424DcD8711aAf4F72","grantAmount":"1000000000000000000000n","expiryDurationSec":"1209600n","startsAt":"1790553600n","endsAt":"1798477478n","budgetRemaining":"434257000000000000000000000n","claimsRe
+OK  getPerpVoucherEligibility fresh 391ms {"eligible":true,"grantAmount":"1000000000000000000000n"}
+OK  getPerpVoucher fresh 246ms {"claimed":false,"floor":"0n","expiresAt":"0n"}
+OK  getMarginAccount fresh 486ms {"unlockedCollateralBalance":"0n","lockedCollateral":"0n","activePerpPools":[],"equity":"0n","withdrawable":"0n","imReq":"0n","mmReq":"0n","cmReq":"0n","marginStatus":"Healthy","asOfBlock":"28366391n"}
+OK  getAccountHealth fresh 125ms {"equity":"0n","imReq":"0n","mmReq":"0n","cmReq":"0n","marginStatus":"Healthy"}
+OK  getAccountEquity fresh 125ms {"scope":"perps","equity":"0n","lockedCollateral":"0n","totalEquity":"0n","asOfBlock":"28366391n"}
+OK  tryGetPerpAccountEquity fresh 124ms "0n"
+OK  listPerpPositions fresh 471ms []
+OK  getPerpPortfolio fresh 617ms {"account":"0xaf3e4fe0eb3db2a6dec0649c0ce98518ff01560e","openOrders":[],"trades":[],"tradesTruncated":false,"tradesSince":1791883720}
+OK  listPerpOrderHistory fresh 129ms []
+OK  getFundingPayments fresh 129ms []
+OK  getMarginEvents fresh 127ms []
+OK  listLiquidations recent 129ms [{"id":"0xe47ad23f6ec3f6fddaaceb46efa6fdd3cbd6e949c175232af053528bd881a999_31","account":"0x1b491afce8b4d1b387be9f84f2fdb0f10818ee8e","pool":null,"kind":"AccountLiquidated","size":null,"price":null,"counterparty":null,"penalty":null,"badDebt":null,"insuranceCovered":null,"deficit":null,"coverageDecl
+OK  getPerpLinkedWalletRegistry 124ms "0x5b3C5Bf1F7AdA852e8AA783f6299932E32073aFb"
+OK  quotePerpFundingPayer 370ms {"funded":false,"reason":"unlinked"}
+OK  getNativeBalance 124ms "0n"
+OK  getIndexerFreshness 377ms {"chainId":50383,"latestProcessedBlock":28366421,"blockHeight":28366421,"numEventsProcessed":359293900,"independentHead":{"chainId":50383,"blockNumber":"28366423n","timestamp":"1792488521n","observedAt":1792488522192},"processedBlockTimestamp":"1792488521n","lagBlocks":"2n","lagSeconds":"0n","report
+ERR fetchPrices NotConfiguredError @somnia-chain/markets-sdk: this price-feed read — needs config.priceFeed = { url } — the price-feed indexer's GraphQL endpoint
+ERR listPriceFeeds NotConfiguredError @somnia-chain/markets-sdk: this price-feed read — needs config.priceFeed = { url } — the price-feed indexer's GraphQL endpoint
+OK  getSystemInfo 618ms {"clobFactory":"0x1a478019Ae4d24249a962934af0f129CE98B5e6f","binaryMarketImpl":"0x6b2FeE58F90AeE79BE03E417213c547526791102","factoryMismatch":false,"settlement":"0xbF4a49e0Dfd092e5FBE8E5761064C49533e6Ed23","settlementMismatch":false,"marketCreator":{"marketCount":"8056n","owner":"0xeEf9aF8775351aedC
+symbols: [
+  'ETH-238225-20OCT26-0930/tUSDC',
+  'BTC-8137318-20OCT26-0930/tUSDC',
+  'BTC-8147971-20OCT26-0930/tUSDC',
+  'ETH-238404-20OCT26-0930/tUSDC',
+  'ZRO/USDso:USDso',
+  'LIT/USDso:USDso',
+  'VVV/USDso:USDso',
+  '1000PEPE/USDso:USDso',
+  'PUMP/USDso:USDso',
+  'ZEC/USDso:USDso',
+  'BTC-8219360-08OCT26-1300/tUSDC',
+  'ETH-252768-08OCT26-1300/tUSDC',
+  'ETH-256811-08OCT26-1010/tUSDC',
+  'BTC-8312133-08OCT26-1010/tUSDC',
+  'ETH-256665-08OCT26-1010/tUSDC',
+  'BTC-8308010-08OCT26-1010/tUSDC',
+  'ETH-269491-06OCT26-1845/tUSDC',
+  'BTC-8559906-06OCT26-1845/tUSDC',
+  'BTC-8559906-06OCT26-1850/tUSDC',
+  'ETH-269491-06OCT26-1850/tUSDC',
+  'BTC-8613995-06OCT26-1240/tUSDC',
+  'ETH-270929-06OCT26-1235/tUSDC',
+  'BTC-8613995-06OCT26-1235/tUSDC',
+  'ETH-270929-06OCT26-1240/tUSDC',
+  'BTC-8631222-06OCT26-1145/tUSDC',
+  'ETH-271610-06OCT26-1145/tUSDC',
+  'ETH-270145-06OCT26-0940/tUSDC',
+  'ETH-269775-06OCT26-0940/tUSDC',
+  'BTC-8575301-06OCT26-0940/tUSDC',
+  'ETH-274828-02OCT26-1400/tUSDC'
+]
+OK  exchange.fetchTicker BTC 129ms {"symbol":"BTC-8137318-20OCT26-0930/tUSDC#YES","chainId":50383,"timestamp":1792488523832,"datetime":"2026-10-20T09:28:43.832Z","baseVolume":0,"quoteVolume":0,"statsState":"ok","perpState":"not-applicable","info":{"volume24h":"0n","baseVolume24h":"0n","trades24h":0,"priceChange24h":"0n","high24h":nul
+ERR exchange.fetchFundingRate BTC InvalidInputError @somnia-chain/markets-sdk: BTC-8137318-20OCT26-0930/tUSDC is not a perp market
+OK  exchange.fetchOrderBook BTC 251ms {"symbol":"BTC-8137318-20OCT26-0930/tUSDC#YES","chainId":50383,"bids":[[0.233,100],[0.226,165],[0.218,230]],"asks":[[0.254,100],[0.262,165],[0.269,230]],"blockNumber":"28366441n","timestamp":1792488524085,"info":{"yesBids":[{"price":"233000n","quantity":"100000000n"},{"price":"226000n","quantity":"1

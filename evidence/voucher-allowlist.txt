@@ -1,0 +1,10 @@
+holders 732
+voucher account 0x1E3eDE6E34143efb8FbC16f1659e1a0b790FDB45 {"claimed":true,"floor":"2000000000000000000000","expiresAt":"1793636381"}
+ZEC pool 0x2a73129f26917124bd2a47a9b355c395c537f050 MarginBank.isVoucherMarketAllowed = true | getMaxPerpOrderSize(voucher acct) limitedBy=initialMargin placeable=true maxQuantity=59900000
+ZRO pool 0x2a1822b02039ddf0e293f3f7243673fc03eaf16c MarginBank.isVoucherMarketAllowed = true | getMaxPerpOrderSize(voucher acct) limitedBy=initialMargin placeable=true maxQuantity=357200000000000000000
+PUMP pool 0x76c981a52530cdf9497559140aafcd8cd16836e7 MarginBank.isVoucherMarketAllowed = true | getMaxPerpOrderSize(voucher acct) limitedBy=initialMargin placeable=true maxQuantity=152100000000
+LIT pool 0xdcb0ad226727b2ce92857f0af5751389d42b2a3f MarginBank.isVoucherMarketAllowed = true | getMaxPerpOrderSize(voucher acct) limitedBy=initialMargin placeable=true maxQuantity=212600000000000000000
+VVV pool 0x352636ab146039851ef06d6367a106d5fb4e6409 MarginBank.isVoucherMarketAllowed = true | getMaxPerpOrderSize(voucher acct) limitedBy=initialMargin placeable=true maxQuantity=27960000000000000000
+1000PEPE pool 0xfa9b9e50cc1745113d57893991af200a74c86b6f MarginBank.isVoucherMarketAllowed = true | getMaxPerpOrderSize(voucher acct) limitedBy=initialMargin placeable=true maxQuantity=162100000000000000000000
+BTC pool 0x4181dd08e73bbcdd1ba3e615a18f6abd941b94c0 MarginBank.isVoucherMarketAllowed = true | getMaxPerpOrderSize(voucher acct) limitedBy=initialMargin placeable=true maxQuantity=3337000
+block 28370302n

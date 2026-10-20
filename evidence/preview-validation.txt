@@ -1,0 +1,13 @@
+request: client.previewPerpOrderMargin({ pool: 0x4181dd08e73bbcdd1ba3e615a18f6abd941b94c0, marginBank: 0x478769e1177c0773c43a593dccc4ad15f15f1394, account: 0x1E3eDE6E34143efb8FbC16f1659e1a0b790FDB45, isBid: true, quantity: -13000n, price: 81000000000000000000000n })
+response: {"asOfBlock":"28371188n","increasingQuantity":"-13000n","lockAmount":"-526499999999999999n","initialMarginPortion":"-526499999999999999n","hasCollateralForLock":true,"meetsInitialMargin":true,"sufficient":true}
+request: client.previewPerpOrderMargin({ pool: 0x4181dd08e73bbcdd1ba3e615a18f6abd941b94c0, marginBank: 0x478769e1177c0773c43a593dccc4ad15f15f1394, account: 0x1E3eDE6E34143efb8FbC16f1659e1a0b790FDB45, isBid: true, quantity: 0n, price: 81000000000000000000000n })
+response: {"asOfBlock":"28371188n","increasingQuantity":"0n","lockAmount":"0n","initialMarginPortion":"0n","hasCollateralForLock":true,"meetsInitialMargin":true,"sufficient":true}
+request: client.previewPerpOrderMargin({ pool: 0x4181dd08e73bbcdd1ba3e615a18f6abd941b94c0, marginBank: 0x478769e1177c0773c43a593dccc4ad15f15f1394, account: 0x1E3eDE6E34143efb8FbC16f1659e1a0b790FDB45, isBid: true, quantity: 13001n, price: 81000000000000000000000n })
+response: {"asOfBlock":"28371196n","increasingQuantity":"13001n","lockAmount":"526540500000000000n","initialMarginPortion":"526540500000000000n","hasCollateralForLock":true,"meetsInitialMargin":true,"sufficient":true}
+request: client.previewPerpOrderMargin({ pool: 0x4181dd08e73bbcdd1ba3e615a18f6abd941b94c0, marginBank: 0x478769e1177c0773c43a593dccc4ad15f15f1394, account: 0x1E3eDE6E34143efb8FbC16f1659e1a0b790FDB45, isBid: true, quantity: 1000n, price: 81000000000000000000000n })
+response: {"asOfBlock":"28371196n","increasingQuantity":"1000n","lockAmount":"40500000000000000n","initialMarginPortion":"40500000000000000n","hasCollateralForLock":true,"meetsInitialMargin":true,"sufficient":true}
+getMaxPerpOrderSize price -1n => InvalidInputError @somnia-chain/markets-sdk: price must be > 0
+getMaxPerpOrderSize price 0n => InvalidInputError @somnia-chain/markets-sdk: price must be > 0
+previewPerpOrderMargin price 0n => sufficient true lockAmount 0n
+previewPerpOrderMargin off-tick price 81000.05 (tick 0.1), qty 13000n => sufficient true lockAmount 526500325000000000n
+sdk 0.32.1

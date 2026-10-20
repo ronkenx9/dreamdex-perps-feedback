@@ -1,0 +1,6 @@
+eth_call placeOrder valid: qty 13000 (min), price 70000.0: OK result=true,11584555278289604914297
+eth_call placeOrder off-lot qty 13001: REVERT The contract function "placeOrder" reverted with the following signature:  0x4f174b29(InvalidQuantity) raw="0x4f174b2900000000000000000000000000000000000000000000000000000000000032c900000
+eth_call placeOrder below-min qty 1000: REVERT The contract function "placeOrder" reverted with the following signature:  0xeaa68ceb raw="0xeaa68ceb00000000000000000000000000000000000000000000000000000000000003e800000
+eth_call placeOrder off-tick price 70000.05: REVERT The contract function "placeOrder" reverted with the following signature:  0xaf608abb(InvalidPrice) raw="0xaf608abb000000000000000000000000000000000000000000000ed2b5d726d70e85000000000
+eth_call placeOrder quantity 0: REVERT The contract function "placeOrder" reverted with the following signature:  0xeaa68ceb raw="0xeaa68ceb000000000000000000000000000000000000000000000000000000000000000000000
+block 28371606n

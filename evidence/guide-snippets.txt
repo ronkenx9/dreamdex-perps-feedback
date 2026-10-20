@@ -1,0 +1,2 @@
+guide one-shot snippet -> TypeError: Cannot read properties of undefined (reading 'id')
+guide quick-start fetchFundingRate -> InvalidInputError: @somnia-chain/markets-sdk: unknown symbol BTC/USDSO:USDSO — call loadMarkets() first
